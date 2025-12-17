@@ -1,6 +1,8 @@
-# ssh-config
+# GPG
 
-### Issue #1
+## SSH integration
+
+**Issue**
 
 When trying to push to a Git repository using an SSH key managed by GPG, you may see:
 
