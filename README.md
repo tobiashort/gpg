@@ -1,6 +1,6 @@
 # GPG
 
-## SSH integration
+## SSH Integration
 
 **Environment Variables**
 
@@ -8,6 +8,17 @@
 set -x SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
 set -x GPG_TTY (tty)
 ```
+
+## GIT Integration
+
+**Signing Commits**
+
+```shell
+git config --global user.signingKey <fingerprint>
+git config --global commit.gpgSign true
+git config --global tag.gpgSign true
+```
+
 
 **Issue**
 
