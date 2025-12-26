@@ -2,6 +2,13 @@
 
 ## SSH integration
 
+**Environment Variables**
+
+```fish
+set -x SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+set -x GPG_TTY (tty)
+```
+
 **Issue**
 
 When trying to push to a Git repository using an SSH key managed by GPG, you may see:
